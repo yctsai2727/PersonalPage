@@ -1,5 +1,5 @@
 import { Avatar, Button, Typography } from "@mui/material";
-import { Box } from "@mui/system";
+import { Box, styled } from "@mui/system";
 import React from "react";
 import CoverImage from '../Image/pexels-lukas-574069.jpg'
 import Myimage from '../Image/21004063.jpg'
@@ -11,19 +11,47 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 const style={
     coverimagebox:{
         backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${CoverImage})`,
-        backgroundSize: '100% 100vh',
+        backgroundSize: '100% 100%',
         backgroundRepeat: 'no-repeat',
         height:"100vh"        
     },
     TitleWord:{
         color:"secondary.light"
+    },
+    mainbox:{
+        top:"20%",
+        left:"10%",
+        width:"80%",
+        display:"flex",
+        justifyContent:"space-between"
     }
 }
+const Mainbox=styled('div')(({ theme }) => ({
+    position:"absolute",
+
+    display:"flex",
+    justifyContent:"space-between",
+    [theme.breakpoints.down('md')]: {
+      width:"calc(100% - 16px)",
+      top:"8px",
+      left:"16px",
+      flexDirection:"column-reverse",
+      alignItems: "center",
+      justifyConetnt:"space-between",
+      height:"80%"
+    },
+    [theme.breakpoints.up('md')]: {
+        width:"80%",
+        top:"20%",
+        left:"10%",
+    }
+  }));
+  
 export default function Profile () {
     return (
     <Box width="100%" sx={{backgroundColor:"primary.light"}}>
     <Box position="relative" sx={style.coverimagebox}>
-        <Box position="absolute" top="20%" left="10%"  width="80%" display="flex" justifyContent="space-between">     
+        <Mainbox>     
         <Box>
         <Typography variant="h2" sx={style.TitleWord}>Hi There,</Typography>
         <Typography variant="h2" sx={style.TitleWord}>I am Sam Leung</Typography>
@@ -47,16 +75,16 @@ export default function Profile () {
         </Box>
         </Box>
         <Box>
-        <Avatar sx={{ width: 'calc(50vh + 8px)', height: 'calc(50vh + 8px)' , backgroundColor:"#FFFFFF"}}>
+        <Avatar sx={{ width: {md:'calc(50vh + 8px)',xs:"180px"}, height: {md:'calc(50vh + 8px)',xs:"180px"} , backgroundColor:"#FFFFFF"}}>
         <Avatar
               alt="Sam Leung"
               src={Myimage}
-              sx={{ width: '50vh', height: '50vh' }}
+              sx={{ width: {md:'50vh',xs:"172px"}, height: {md:'50vh',xs:"172px"} }}
             />
         </Avatar>
         </Box>
         
-       </Box>
+       </Mainbox>
     </Box>
 
 

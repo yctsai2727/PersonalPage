@@ -98,7 +98,7 @@ export default function Topbar (){
               variant="h5"
               noWrap
               component="a"
-              href=""
+              href="/app"              
               sx={{
                 mr: 2,
                 display: { xs: 'flex', md: 'none' },
