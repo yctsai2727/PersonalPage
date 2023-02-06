@@ -33,7 +33,7 @@ export default function Topbar (){
     };
   
 
-    const pages = ['Introduction', 'Personal Diary','About Me'];
+    const pages = [ 'Personal Diary','About Me'];
     return (
       <AppBar position="static" enableColorOnDark color="primary">
         <Container maxWidth="xl">

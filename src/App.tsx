@@ -28,7 +28,7 @@ function App() {
     <Routes>
               <Route path="/app/*">
                 <Route path="" element={<Profile />}></Route>
-                <Route path="Introduction" element={<Introduction/>}></Route>
+                {/*<Route path="Introduction" element={<Introduction/>}></Route>*/}
                 <Route path="Personal_Diary" element={<Personal_Diary/>}></Route>
                 <Route path="About_Me" element={<AboutMe/>}></Route>
                 <Route path="*" element={<Navigate to="/app" replace={true} />}></Route>
