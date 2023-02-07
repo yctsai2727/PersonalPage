@@ -52,7 +52,7 @@ class DiaryItem extends React.Component{
                 <Card sx={{...style.diarycard,...{"borderRadius":i%2?"16px 16px 16px 0px":"16px 0px 16px 16px"}}}>
                     <Box ml="16px">
                         <Typography variant="h6">{a.title}</Typography>
-                        <Typography variant="body2" color="grey">{time.year+"/"+time.month+"/"+time.date+" "+time.hour+":"+time.mins}</Typography>
+                        <Typography variant="body2" color="grey">{time.year+"/"+time.month+"/"+time.date+" "+(time.hour>9?time.hour:"0"+time.hour)+":"+(time.mins>9?time.mins:"0"+time.mins)}</Typography>
                         <Divider variant="fullWidth" />
                         <Box pt="8px">
                         <Typography variant="body2" color="grey">{a.despcription}</Typography>
