@@ -34,16 +34,20 @@ class JobListitem extends React.Component{
           >
             {data[key]['post']}
             </Typography>
+            <Box display="flex" alignItems="center" flexDirection="column">
             <Typography
-            sx={{ display: 'inline' }}
-            component="span"
             color="grey"
             variant="body2"
           >
             {data[key]['name']}
-            {' -- ' +data[key]['year']}
-
             </Typography>
+            <Typography
+            color="grey"
+            variant="body2"
+          >
+            {data[key]['year']}
+            </Typography>
+            </Box>
                 </Box>
             
             </React.Fragment>
@@ -51,16 +55,14 @@ class JobListitem extends React.Component{
 
           secondary={
             <React.Fragment>
-                <pre>
               <Typography
-                sx={{ display: 'inline' }}
-                component="span"
                 variant="body2"
                 color="grey"
+                paragraph={true}
+                sx={{ whiteSpace: 'pre-line'}}
               >
                 {data[key]['despcription']}
               </Typography>
-                </pre>
             </React.Fragment>
           }
         />
