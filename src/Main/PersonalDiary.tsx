@@ -38,12 +38,21 @@ class DiaryItem extends React.Component{
         })
         let i=0;
         tempdata.forEach((a)=>{
+            let tempt=new Date(a.time*1000)
+            let time={
+                'year':tempt.getFullYear(),
+                'month':tempt.getMonth()+1,
+                'date':tempt.getDate(),
+                'hour':tempt.getHours(),
+                'mins':tempt.getMinutes()
+            }
+            console.log(time)
             temp.push(
                 <Box display="flex" ml="8px" mr="8px" justifyContent={i%2?"flex-start":"flex-end"}>
                 <Card sx={{...style.diarycard,...{"borderRadius":i%2?"16px 16px 16px 0px":"16px 0px 16px 16px"}}}>
                     <Box ml="16px">
                         <Typography variant="h6">{a.title}</Typography>
-                        <Typography variant="body2" color="grey">{new Date(a.time*1000).toString()}</Typography>
+                        <Typography variant="body2" color="grey">{time.year+"/"+time.month+"/"+time.date+" "+time.hour+":"+time.mins}</Typography>
                         <Divider variant="fullWidth" />
                         <Box pt="8px">
                         <Typography variant="body2" color="grey">{a.despcription}</Typography>
