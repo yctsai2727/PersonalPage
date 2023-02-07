@@ -8,6 +8,7 @@ import Profile from './Main/Profile';
 import Introduction from './Main/Introduction';
 import Personal_Diary from './Main/PersonalDiary';
 import AboutMe from './Main/AboutMe';
+import Main from './Main/Main';
 const theme = createTheme({
   palette: {
     primary: {
@@ -29,8 +30,8 @@ function App() {
               <Route path="/app/*">
                 <Route path="" element={<Profile />}></Route>
                 {/*<Route path="Introduction" element={<Introduction/>}></Route>*/}
-                <Route path="Personal_Diary" element={<Personal_Diary/>}></Route>
-                <Route path="About_Me" element={<AboutMe/>}></Route>
+                <Route path="Personal_Diary" element={<Main child={<Personal_Diary/>} />}></Route>
+                <Route path="About_Me" element={<Main child={<AboutMe/>} />}></Route>
                 <Route path="*" element={<Navigate to="/app" replace={true} />}></Route>
               </Route>
               <Route path="*" element={<Navigate to="/app" replace={true} />}></Route>

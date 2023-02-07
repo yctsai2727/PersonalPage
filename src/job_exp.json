@@ -1,0 +1,14 @@
+{
+    "TBR":{
+        "name":"TBR Systems Limited",
+        "year":"2020",
+        "post":"Part-time on-site system engineer",
+        "despcription":"Linux server setup and Nginx,Netbackup,SQL deployment"
+    },
+    "Mi-expert":{
+        "name":"MiExpert Limited",
+        "year":"2022-now",
+        "post":"Part-time full stack engineer",
+        "despcription":"Front-end: React with Typescript for chatroom, CMS panel\nBack-end: Serverless cloud deploy with aws service (API gateway, Lambda, DynamoDB)"
+    }
+}

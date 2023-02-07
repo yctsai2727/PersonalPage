@@ -1,7 +1,70 @@
-import React from "react";
+import { Avatar, Card, CardActions, CardContent, CardHeader, Divider, List, ListItem, ListItemAvatar, ListItemText, Typography } from "@mui/material";
+import { Box } from "@mui/system";
+import React, { ReactNode } from "react";
+import CoverImage from '../Image/turbulence.png'
+import Myimage from '../Image/20230125_122649.jpg'
+import GitHubIcon from '@mui/icons-material/GitHub';
+import { IconButton } from '@mui/material';
+import EmailIcon from '@mui/icons-material/Email';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import FacebookIcon from '@mui/icons-material/Facebook';
+import data from '../personal_diary.json'
+const style={
+    container:{
+        minHeight:"30vh",
+        width:"100%",
+        padding:"8px", 
+        borderRadius:"16px", 
+        mb:"30px",
+        boxShadow:"2px 5px rgba(0,0,0,0.05)"
+    },
+    diarycard:{
+        width:"60%",
+        padding:"8px", 
+        borderRadius:"16px", 
+        mb:"30px",
+        boxShadow:"2px 5px 2px 5px rgba(0,0,0,0.05)"
+    }
+}
+class DiaryItem extends React.Component{
+    render(){
+        const tempdata:{"title":string,"time":number,"despcription":string}[]=[]
+        const temp:JSX.Element[]=[];
+        for(const key in data){
+            tempdata.push(data[key])
+        }
+        tempdata.sort(function(a,b){
+            return b.time-a.time
+        })
+        let i=0;
+        tempdata.forEach((a)=>{
+            temp.push(
+                <Box display="flex" ml="8px" mr="8px" justifyContent={i%2?"flex-start":"flex-end"}>
+                <Card sx={{...style.diarycard,...{"borderRadius":i%2?"16px 16px 16px 0px":"16px 0px 16px 16px"}}}>
+                    <Box ml="16px">
+                        <Typography variant="h6">{a.title}</Typography>
+                        <Typography variant="body2" color="grey">{new Date(a.time*1000).toString()}</Typography>
+                        <Divider variant="fullWidth" />
+                        <Box pt="8px">
+                        <Typography variant="body2" color="grey">{a.despcription}</Typography>
+                        </Box>
+                    </Box>
 
+                </Card>
+                </Box>
+            )
+            i+=1;
+        })
+        return <>{temp}</>
+    }
+}
 export default function Personal_Diary () {
-    console.log('hi')
-    return (<>
-    p</>)
+    return (
+        <Card sx={style.container}>
+            <CardHeader        
+            title="Personal Diary"  
+             />
+             <DiaryItem/>
+        </Card>
+    )
 }
