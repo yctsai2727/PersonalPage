@@ -30,7 +30,7 @@ export default function Main (props:{child:ReactNode}) {
         <Box height="100%" width="100%">
         <Box  height="100%"  display="flex" justifyContent="space-evenly" alignItems="center" flexDirection="column">
 
-        <Box  pt={"min(50vh , 280px)"} >
+        <Box  mt={"min(50vh , 280px)"} >
         <Avatar sx={{ width: '180px', height: '180px' , backgroundColor:"#FFFFFF"}}>
         <Avatar
               alt="Sam Leung"
