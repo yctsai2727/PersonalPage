@@ -35,7 +35,7 @@ export default function Topbar (){
 
     const pages = [ 'Personal Diary','About Me'];
     return (
-      <AppBar position="static" enableColorOnDark color="primary">
+      <AppBar position="static" enableColorOnDark color="primary" sx={{height:"64px"}}>
         <Container maxWidth="xl">
           <Toolbar disableGutters>
             <AssignmentIndIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />

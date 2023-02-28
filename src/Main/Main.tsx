@@ -12,9 +12,9 @@ import data from '../job_exp.json'
 const style={
     coverimagebox:{
         backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${CoverImage})`,
-        backgroundSize: '100% min(50vh , 280px)',
+        backgroundSize: '100% 16rem',
         backgroundRepeat: 'no-repeat',
-        height:"min(50vh , 280px)"        
+        height:"16rem"        
     }
 }
 export default function Main (props:{child:ReactNode}) {
@@ -22,7 +22,7 @@ export default function Main (props:{child:ReactNode}) {
     <Box width="100%" minHeight="100vh" sx={{backgroundColor:"#F2F6F8"}}>
     <Box display='flex' justifyContent="space-evenly">
     <Box position="relative" height="100%" width="100%" sx={style.coverimagebox}>
-        <Box width="100%" position="absolute" top="35%" display="flex" alignItems="center" flexDirection="column">  
+        <Box width="100%" position="relative" top="35%" display="flex" alignItems="center" flexDirection="column">  
         <Typography fontFamily="Brush Script MT" color="white">Sam Leung, Cheuk Wai </Typography>
         <Typography fontFamily="Bradley Hand" color="white">Undergraduate BEng(COMP) in HKUST</Typography>
         <Typography fontFamily="Bradley Hand" color="white">Full stack programmer</Typography>
@@ -30,7 +30,7 @@ export default function Main (props:{child:ReactNode}) {
         <Box height="100%" width="100%">
         <Box  height="100%"  display="flex" justifyContent="space-evenly" alignItems="center" flexDirection="column">
 
-        <Box  mt={"min(50vh , 280px)"} >
+        <Box  mt={"8rem"} >
         <Avatar sx={{ width: '180px', height: '180px' , backgroundColor:"#FFFFFF"}}>
         <Avatar
               alt="Sam Leung"

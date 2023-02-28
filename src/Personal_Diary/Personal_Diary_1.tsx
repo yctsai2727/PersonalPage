@@ -16,32 +16,8 @@ import data from '../personal_diary.json'
 import PeopleIcon from '@mui/icons-material/People';
 import QuestionMarkIcon from '@mui/icons-material/QuestionMark';
 import TipsAndUpdatesIcon from '@mui/icons-material/TipsAndUpdates';
-const Mainbox=styled('div')(({ theme }) => ({
+import { Mainbox, SubBox } from "./Box";
 
-    display:"flex",
-    paddingBottom:"3rem",
-    [theme.breakpoints.down('md')]: {
-        justifyContent:"space-around",
-        alignItems: 'center',
-
-
-        flexDirection:"column"
-    },
-    [theme.breakpoints.up('md')]: {
-        flexDirection:"row",
-        justifyContent:"space-around"
-
-    }
-  }));
-const SubBox=styled('div')(({ theme }) => ({
-
-    [theme.breakpoints.down('md')]: {
-        width:"80%"
-    },
-    [theme.breakpoints.up('md')]: {
-        width:"40%"
-    }
-  }));
 
 export default function Personal_Diary_1 () {
     return (
@@ -112,7 +88,7 @@ export default function Personal_Diary_1 () {
             <List sx={{width:"100%"}}>
           <ListItem disablePadding>
             <ListItemButton sx={{cursor:"default"}}>
-              <ListItemIcon>
+              <ListItemIcon sx={{minWidth:"fit-content", paddingRight:"3px"}}>
                 <PeopleIcon/>
               </ListItemIcon>
               <Box display="flex" alignItems="center">
@@ -127,7 +103,7 @@ export default function Personal_Diary_1 () {
           </ListItem>
           <ListItem disablePadding>
             <ListItemButton sx={{cursor:"default"}}>
-              <ListItemIcon>
+              <ListItemIcon sx={{minWidth:"fit-content", paddingRight:"3px"}}>
                 <QuestionMarkIcon/>
               </ListItemIcon>
               <Box display="flex" alignItems="center">
@@ -143,7 +119,7 @@ export default function Personal_Diary_1 () {
           </ListItem>
           <ListItem disablePadding>
             <ListItemButton sx={{cursor:"default"}}>
-              <ListItemIcon>
+              <ListItemIcon sx={{minWidth:"fit-content",paddingRight:"3px"}}>
                 <TipsAndUpdatesIcon/>
               </ListItemIcon>
               <Box display="flex" alignItems="center">
@@ -197,7 +173,7 @@ export default function Personal_Diary_1 () {
             <Box width="100%" display="flex" flexDirection= 'column' alignItems="center">
 
             <Box width="100%" display="flex" flexDirection= 'column' alignItems="align-start">
-                We did a questionnaire between our firends to identify is it really a need of students and is our solution help to bridge it. 
+                We did a questionnaire between our firends to identify is it really a need of students and is our solution help to bridge it. From the result, we can found that the majority faced the similar difficulty and agree that our solution may bring benefit to it.
             </Box>
             </Box>
             </Typography>

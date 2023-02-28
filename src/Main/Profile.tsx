@@ -13,28 +13,19 @@ const style={
         backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${CoverImage})`,
         backgroundSize: '100% 100%',
         backgroundRepeat: 'no-repeat',
-        height:"100vh"        
+        minHeight:"100vh"        
     },
     TitleWord:{
         color:"secondary.light"
-    },
-    mainbox:{
-        top:"20%",
-        left:"10%",
-        width:"80%",
-        display:"flex",
-        justifyContent:"space-between"
     }
 }
 const Mainbox=styled('div')(({ theme }) => ({
-    position:"absolute",
-
+    position:"relative",
     display:"flex",
     justifyContent:"space-between",
     [theme.breakpoints.down('md')]: {
       width:"calc(100% - 16px)",
-      top:"8px",
-      left:"16px",
+      paddingLeft:"16px",
       flexDirection:"column-reverse",
       alignItems: "center",
       justifyConetnt:"space-between",
@@ -74,7 +65,7 @@ export default function Profile () {
         </IconButton>
         </Box>
         </Box>
-        <Box>
+        <Box pt="8px">
         <Avatar sx={{ width: {md:'calc(50vh + 8px)',xs:"180px"}, height: {md:'calc(50vh + 8px)',xs:"180px"} , backgroundColor:"#FFFFFF"}}>
         <Avatar
               alt="Sam Leung"

@@ -13,6 +13,8 @@ import Personal_Diary_1 from "../Personal_Diary/Personal_Diary_1";
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import AboutMe from "./AboutMe";
+import Personal_Diary_2 from "../Personal_Diary/Personal_Diary_2";
+import Personal_Diary_3 from "../Personal_Diary/Personal_Diary_3";
 const style={
     container:{
         minHeight:"30vh",
@@ -81,8 +83,13 @@ export default function Personal_Diary () {
             <CardHeader        
             title="Personal Diary"  
              />
-             <CardContent>
-                 <Tabs value={project} onChange={(e,a)=>{
+             <CardContent >
+                 <Box>
+                 <Tabs
+                   variant="scrollable"
+                   scrollButtons="auto"
+
+                 value={project} onChange={(e,a)=>{
                     switch(a){
                         case 0: 
                             setprojectnum(0)
@@ -90,11 +97,11 @@ export default function Personal_Diary () {
                             break;
                         case 1: 
                             setprojectnum(1)
-                            setproject(AboutMe);
+                            setproject(Personal_Diary_2);
                             break;
                         case 2: 
-                            setprojectnum(0)
-                            setproject(Personal_Diary_1);
+                            setprojectnum(2)
+                            setproject(Personal_Diary_3);
                             break;
 
                     }
@@ -103,11 +110,11 @@ export default function Personal_Diary () {
                     <Tab label="Project 2" disabled sx={{borderStyle:'solid',  borderColor:projectnum==1?'grey':"transparent" ,borderWidth:'0px 0px 2px 0px'}}/>
                     <Tab label="Project 3" disabled sx={{borderStyle:'solid',  borderColor:projectnum==2?'grey':"transparent" ,borderWidth:'0px 0px 2px 0px'}} />
                 </Tabs>
+                </Box>
             </CardContent>
             <CardContent>
-            <Personal_Diary_1/>
              {
-             //project
+             project
              }
             </CardContent>
         </Card>
