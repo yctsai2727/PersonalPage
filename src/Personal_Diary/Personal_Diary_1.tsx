@@ -35,14 +35,14 @@ export default function Personal_Diary_1 () {
             <Box width="100%" display="flex" flexDirection= 'column' alignItems="center">
 
             <Typography variant="body1" color="grey">
-            We discussed few different inconvenience part in HKUST and we proposed several ideas.
+            We discussed a few different inconvenience parts in HKUST and we proposed several ideas.
             </Typography>
             <Box width="100%" display="flex" flexDirection= 'column' alignItems="align-start">
             <Typography variant="body1" color="grey">
-            1) Toilet System (show nearest toilet with empty slot)
+            1) Toilet System (show the nearest toilet with an empty slot)
             </Typography>
             <Typography variant="body1" color="grey">
-            2) Canteen System (display number of avaliable dishes)
+            2) Canteen System (display number of available dishes)
             </Typography>
             <Typography variant="body1" color="grey">
             3) Classroom booking System (book empty classroom)
@@ -66,16 +66,10 @@ export default function Personal_Diary_1 () {
             <Box width="100%" display="flex" flexDirection= 'column' alignItems="align-start">
 
             <Typography variant="body1" color="grey" pb="1rem">
-                Based on our personal experience, the toilet in HKUST is always overcrowded during lesson break.
-                Thus, when we want to go toilet, we usually reqired to go to the next toilet you know, but 
-                the this issue occurs again and again with an endless trial.
-                However, the usage of toilet is not evenly distributed. On the other words, Some toilets in the campus always have its cubicles preoccupied, while there are still some vacancies in other toilets.
-                It is inconvenient when you go into toilet and find out all cubicles are occupied.
+            Based on our personal experience, the toilet in HKUST is always overcrowded during lesson breaks. Thus, when we want to go toilet, we are usually required to go to the next toilet you know, but this issue occurs again and again with an endless trials. However, the usage of toilets is not evenly distributed. In the other words, Some toilets on the campus always have their cubicles preoccupied, while there are still some vacancies in other toilets. It is inconvenient when you go into the toilet and find out all cubicles are occupied.
             </Typography>
             <Typography variant="body1" color="grey">
-                We Observed that the situation where students are entering and leaving the washroom within a short period. This happens especially around 12:00, 13:30, 15:00, which are breaks between lectures. 
-                Some lesser-known washrooms are not utilized as frequently as washrooms near hotspots, eg. Library, LT-A, LG1 ,canteen…
-
+            We observed a situation where students are entering and left the washroom within a short period. This happens especially around 12:00, 13:30, and 15:00, which are breaks between lectures. Some lesser-known washrooms are not utilized as frequently as washrooms near hotspots, eg. Library, LT-A, LG1 canteen…
             </Typography>
             </Box>
             </Box>
@@ -144,7 +138,7 @@ export default function Personal_Diary_1 () {
             <Typography color="grey">
             Show available toilet cubicles on the app directly embed into HKUST Student / Staff App
             <ListItem  style={{ display: 'list-item' }}>
-            Students / Staff are now able to know where is the closest washroom with empty slot !!
+            Students / Staff are now able to know where is the closest washroom with an empty slot !!
             </ListItem>
             <ListItem style={{ display: 'list-item' }}>
                 Simplistic UI that is intuitive and responsive
@@ -173,7 +167,7 @@ export default function Personal_Diary_1 () {
             <Box width="100%" display="flex" flexDirection= 'column' alignItems="center">
 
             <Box width="100%" display="flex" flexDirection= 'column' alignItems="align-start">
-                We did a questionnaire between our firends to identify is it really a need of students and is our solution help to bridge it. From the result, we can found that the majority faced the similar difficulty and agree that our solution may bring benefit to it.
+            We did a questionnaire among our friends to identify if is it a need for students and is our solution helps to bridge it. From the result, we can find that the majority faced a similar difficulty and agree that our solution may bring benefit to it.
             </Box>
             </Box>
             </Typography>
@@ -204,8 +198,7 @@ export default function Personal_Diary_1 () {
         <Mainbox>
         <Box width="80%">
         <Typography color="grey">
-        This project is practical and meet the real world requirement as we need to build a feasible idea with details to bridge the real world problem. "User-firendly" is always a problem of engineer. Like for around 15 years ago, people using their phones with phyiscal keys and almost all engineer not trying to make it more user-firendly in UI, Control but only trying to minimze the size. The only company to make the UI more fit human's expectation is Apple, and that makes it pops to one of the world biggest company. In this project, we are going to do the similar things. Find out what is not user-friendly, and think a idea to fix. These process brings me a thinking mindset, how to make our life better. There are not nesscary a big changes, a game changer but enhance our life a bit more.
-        During the project, I proposed this idea about toilet. And luckily, all of my groupmates agree with it and we started brainstorming how to perfect the idea, how to make the toilet system meet our expectation. And our answer is written above. No need a big change, but makes our life better.
+        This project is practical and meets the real-world requirement as we need to build a feasible idea with details to bridge the real-world problem. "User-friendly" is always a problem for engineers. Around 15 years ago, people used their phones with physical keys and almost all engineers not trying to make it more user-friendly in UI, Control but only tried to minimize the size. The only company to make the UI fit human expectation is Apple, and that makes it pops into one of the world's biggest companies. In this project, we are going to do similar things. Find out what is not user-friendly, and think of an idea to fix it. This process brings me a thinking mindset, on how to make our life better. There are not necessarily big changes or game changers but enhance our life a bit more. During the project, I proposed the idea of a toilet system. And luckily, all of my groupmates agree with it and we started brainstorming how to perfect the idea, and how to make the toilet system meet our expectations. And our answer is written above. No need for a big change, but makes our life better.
         </Typography>
         </Box>
         </Mainbox>
