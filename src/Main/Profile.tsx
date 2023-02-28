@@ -33,7 +33,7 @@ const Mainbox=styled('div')(({ theme }) => ({
     },
     [theme.breakpoints.up('md')]: {
         width:"80%",
-        top:"20%",
+        paddingTop:"40px",
         left:"10%",
     }
   }));
