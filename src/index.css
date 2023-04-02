@@ -16,3 +16,13 @@ html{
   height: -webkit-fill-available;
   background-color: "white";
 }
+
+.video-responsive {
+  height: 0;
+}
+
+.video-responsive iframe {
+  left: 0;
+  height: 100%;
+  position: absolute;
+}
