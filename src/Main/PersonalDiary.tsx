@@ -108,15 +108,14 @@ export default function Personal_Diary () {
                  }} aria-label="basic tabs example">
                     <Tab label="Project 1" sx={{borderStyle:'solid',  borderColor:projectnum==0?'grey':"transparent" ,borderWidth:'0px 0px 2px 0px'}}/>
                     <Tab label="Project 2" sx={{borderStyle:'solid',  borderColor:projectnum==1?'grey':"transparent" ,borderWidth:'0px 0px 2px 0px'}}/>
-                    <Tab label="Project 3" disabled sx={{borderStyle:'solid',  borderColor:projectnum==2?'grey':"transparent" ,borderWidth:'0px 0px 2px 0px'}} />
+                    <Tab label="Project 3" sx={{borderStyle:'solid',  borderColor:projectnum==2?'grey':"transparent" ,borderWidth:'0px 0px 2px 0px'}} />
                 </Tabs>
                 </Box>
             </CardContent>
             <CardContent>
              {
              project
-             
-             }
+            }
             </CardContent>
         </Card>
     )
