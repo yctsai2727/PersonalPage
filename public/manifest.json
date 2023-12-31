@@ -1,21 +1,21 @@
 {
-  "short_name": "Sam portfolio",
-  "name": "Sam portfolio",
+  "short_name": "yctsai",
+  "name": "yctsai Personal Page",
   "icons": [
     {
-      "src": "./favicon.ico",
+      "src": "./icon.ico",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     },
     {
-      "src": "./21004063.jpg",
+      "src": "./icon.png",
       "type": "image/png",
-      "sizes": "192x192"
+      "sizes": "64x64"
     },
     {
-      "src": "./21004063.jpg",
+      "src": "./icon.png",
       "type": "image/png",
-      "sizes": "512x512"
+      "sizes": "64x64"
     }
   ],
   "start_url": ".",
