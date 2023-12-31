@@ -27,13 +27,13 @@ export default function Topbar (){
     const handleCloseNavMenu = (props:string) => {
       setAnchorElNav(null);
       if(props) {
-      window.location.assign('/app/'+props.replace(' ','_'))
+      window.location.assign('/'+props.replace(' ','_'))
         //<Navigate to={props.replace(' ','_')} replace={true}/>
     }
     };
   
-
-    const pages = [ 'Personal Diary','About Me'];
+    const pages = ['Home','Experience','Publications'];
+    
     return (
       <AppBar position="static" enableColorOnDark color="primary" sx={{height:"64px"}}>
         <Container maxWidth="xl">
@@ -43,7 +43,7 @@ export default function Topbar (){
               variant="h6"
               noWrap
               component="a"
-              href="/app"
+              href="/"
               sx={{
                 mr: 2,
                 display: { xs: 'none', md: 'flex' },
@@ -54,7 +54,7 @@ export default function Topbar (){
                 textDecoration: 'none',
               }}
             >
-              Portfolio 
+            yctsai
             </Typography>
   
             <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
@@ -98,7 +98,7 @@ export default function Topbar (){
               variant="h5"
               noWrap
               component="a"
-              href="/app"              
+              href="/"              
               sx={{
                 mr: 2,
                 display: { xs: 'flex', md: 'none' },
@@ -110,7 +110,7 @@ export default function Topbar (){
                 textDecoration: 'none',
               }}
             >
-              Portfolio
+              yctsai
             </Typography>
             <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
               {pages.map((page) => (

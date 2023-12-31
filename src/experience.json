@@ -1,0 +1,30 @@
+{
+    "Education & Job":{
+        "Research Assistant":{
+            "year":"Feb, 2024 - May, 2024"
+        },
+        "B.Sc. in Applied Mathematics":{
+            "year":"Sep, 2020 - Jan, 2024"
+        }
+    },
+    "Research":{
+        "Reactive Synthesis & Automata Learning":{
+            "year":"2023 - now",
+            "description":"I visited professor #h{https://verif.ulb.ac.be/jfr/}{Jean-François Raskin} in the Summer of 2023, we had a project that studied the problems of #h{https://link.springer.com/chapter/10.1007/978-3-031-30820-8_20}{example-guided reactive synthesis}, we looked into the extension with involving a stochastic environmental input and attempt to formulate a way to generate a set of optimal realizable examples of system trace with respect to a certain cost/reward function. The project is still in progress."
+        },
+        "Parameterized Algorithm & Model Checking":{
+            "year":"2021 - now",
+            "description":"I joined the research group #h{https://amir.goharshady.com/alpacas-research-group}{ALPACAS} lead by professor #h{https://amir.goharshady.com/home}{Amir Goharshady} in 2021, the group focuses on a broad area of theoretical computer science, ranging from parameterized algorithm, formal methods to cryptography and blockchains. I mainly worked in the field of formal methods and model checking but also kept an eyes on the application of parameterized algorithm for improving the solutions. Our #h{https://dl.acm.org/doi/10.1145/3622868}{recent work} improved the existing algebraic program analysis (APA) framework and provided an efficient extension to the on-demand setting. A recent focus of my research direction in this group focuses on the probabilistic program analysis and the application of martingale theory, variuous problems like the methods of synthesizing martingales and alternative extension of APA framework using martingale theory are currently the main direction of study."
+        },
+        "Computational Fluid Dynamics & Dynamical Systems":{
+            "year":"2020 - now",
+            "description":"The project is conducted under the supervision of professor #h{https://mathematicsasaprofession.my.canva.site/}{Shingyu Leung}, the project aims to develop efficient methods for visualizing the Lagrangian Coherent Structure under different settings, with a particular focus on the Lagrangian Coherent Structure (LCS). Various approaches like Finite-time Lyapunov Exponent (FTLE), clustering methods, and trajectory analysis have been studied and we proposed a new quantity for capturing LCS in a recent paper submitted to CiCP. Recently we are looking into the stochastic extension of our proposed framework and working around both the optimization of the method and analysis on different test cases."
+        }
+    },
+    "Teaching":{
+        "STMC coding team instructor":{
+            "year":"2022-2024",
+            "description":"I part-time worked as a coding team instructor at #h{https://www.stmc.edu.hk}{Shatin Methodist College (STMC)}, I am in charge of tutoring a class of form one (equivalently grade 7) students to provide them the basic coding skills in Python as well as some foundations in logics, mathematics and algorithms. Some of the past teaching material can be found #h{https://www.stmc.edu.hk/codingteam/}{here}."
+        }
+    }
+}
