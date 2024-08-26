@@ -1,20 +1,27 @@
 {
     "Education & Job":{
-        "Research Assistant":{
+        "Ph.D. in Informatics @ NII":{
+            "year":"Oct, 2024 - Sep, 2029   (Expected)"
+        },
+        "Research Assistant @ HKUST":{
             "year":"Feb, 2024 - May, 2024"
         },
-        "B.Sc. in Applied Mathematics":{
+        "B.Sc. in Applied Mathematics @ HKUST":{
             "year":"Sep, 2020 - Jan, 2024"
         }
     },
     "Research":{
+        "Probabilistic & Quantum System Verification":{
+            "year":"2024 - now",
+            "description":"I joined the research group #h{https://group-mmm.org/eratommsd/}{ERATO-MMSD} as a Ph.D. student in October, 2024. It is known that a wide range of technique in the probabilistic model checking can be modified and translated into the quantum setting, but it is currently lacking a general framework for guiding such translation. Hence the goal of the project is to develop a categorical framework that unifies the approach for formulating and verifying various models in the probabilistic and quantum setting, in the same time we also looking for opportunities to develop algorithms and tools for quantum model checking based on the theorem developed."
+        },
         "Reactive Synthesis & Automata Learning":{
             "year":"2023 - now",
             "description":"I visited professor #h{https://verif.ulb.ac.be/jfr/}{Jean-François Raskin} in the Summer of 2023, we had a project that studied the problems of #h{https://link.springer.com/chapter/10.1007/978-3-031-30820-8_20}{example-guided reactive synthesis}, we looked into the extension with involving a stochastic environmental input and attempt to formulate a way to generate a set of optimal realizable examples of system trace with respect to a certain cost/reward function. The project is still in progress."
         },
         "Parameterized Algorithm & Model Checking":{
-            "year":"2021 - now",
-            "description":"I joined the research group #h{https://amir.goharshady.com/alpacas-research-group}{ALPACAS} lead by professor #h{https://amir.goharshady.com/home}{Amir Goharshady} in 2021, the group focuses on a broad area of theoretical computer science, ranging from parameterized algorithm, formal methods to cryptography and blockchains. I mainly worked in the field of formal methods and model checking but also kept an eyes on the application of parameterized algorithm for improving the solutions. Our #h{https://dl.acm.org/doi/10.1145/3622868}{recent work} improved the existing algebraic program analysis (APA) framework and provided an efficient extension to the on-demand setting. A recent focus of my research direction in this group focuses on the probabilistic program analysis and the application of martingale theory, variuous problems like the methods of synthesizing martingales and alternative extension of APA framework using martingale theory are currently the main direction of study."
+            "year":"2021 - 2024",
+            "description":"I joined the research group #h{https://amir.goharshady.com/alpacas-research-group}{ALPACAS} lead by professor #h{https://amir.goharshady.com/home}{Amir Goharshady} in 2021, the group focuses on a broad area of theoretical computer science, ranging from parameterized algorithm, formal methods to cryptography and blockchains. I mainly worked in the field of formal methods and model checking but also kept an eyes on the application of parameterized algorithm for improving the solutions. Our #h{https://dl.acm.org/doi/10.1145/3622868}{recent work} improved the existing algebraic program analysis (APA) framework and provided an efficient extension to the on-demand setting."
         },
         "Computational Fluid Dynamics & Dynamical Systems":{
             "year":"2020 - now",

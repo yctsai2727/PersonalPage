@@ -28,13 +28,13 @@ export default function Home () {
                     />
         <CardContent>
         <Typography variant="body2" color="text.secondary" display="inline" align="left" sx={{"flex-wrap":"wrap"}}>
-        My name is Yun Chen Tsai (蔡昀宸), aka Vincent. I was born in Taiwan and had most of my study in Hong Kong. I graduated from&nbsp;<Link href="https://hkust.edu.hk/" color="text.secondary" display="inline">Hong Kong University of Science and Technology (HKUST)</Link>&nbsp;in January, 2024 and currently appointed as a research assistant at HKUST.
+        My name is Yun Chen Tsai (蔡昀宸), aka Vincent. I was born in Taiwan and had most of my study in Hong Kong. I graduated from&nbsp;<Link href="https://hkust.edu.hk/" color="text.secondary" display="inline">Hong Kong University of Science and Technology (HKUST)</Link>&nbsp;in January, 2024 and started my Ph.D. study at <Link href="https://www.nii.ac.jp/graduate/" color="text.secondary" display="inline">National Institute of Informatics (NII)</Link>&nbsp;under the supervision of Prof. <Link href="https://group-mmm.org/~ichiro/index.html" color="text.secondary" display="inline">Ichiro Hasuo</Link>&nbsp;in October, 2024.
         </Typography>
         <Typography variant="body2" color="text.secondary" display="flex">
         &nbsp;
         </Typography>
         <Typography variant="body2" color="text.secondary" display="inline" align="left" sx={{"flex-wrap":"wrap"}}>
-          My research interest falls in the broad area of scientific computation and formal methods. The main focus of my research aim to utilize tools from diverse aspect of mathematics including but not limited to differential equations, optimization techniques, probability theory, algebraic method to develop novel frameworks and improve existing solutions on problems lying in fields like dynamical system, model checking and program synthesis. See my <Link href="/Experience" color="text.secondary" display="inline">experience</Link> and <Link href="/Publications" color="text.secondary" display="inline">publications</Link> pages for more details.
+          My research interest falls in the broad area of scientific computation and formal methods. The main focus of my research aim to utilize tools from diverse aspect of mathematics including but not limited to differential equations, optimization techniques, probability theory, algebraic method to develop novel frameworks and improve existing solutions on problems lying in fields like dynamical system, model checking and program synthesis. A recent focus is on the verification of probabilistic and quantum model. See my <Link href="/Experience" color="text.secondary" display="inline">experience</Link> and <Link href="/Publications" color="text.secondary" display="inline">publications</Link> pages for more details.
         </Typography>
       </CardContent>
         </Card>
