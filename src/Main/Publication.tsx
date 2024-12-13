@@ -76,7 +76,7 @@ class PublicationList extends React.Component{
                     {item.entryTags.title}
                 </Typography>
                 <Typography variant="body2" color="text.secondary" display="flex">
-                    {item.entryTags.journal}
+                    {item.entryTags.journal}&nbsp;{(item.entryTags.doi)?<a href={item.entryTags.doi} rel="noreferrer" target="_blank">[DOI]</a>:<></>}&nbsp;{(item.entryTags.open)?<a href={item.entryTags.oplink} rel="noreferrer" target="_blank">[{item.entryTags.open}]</a>:<></>}
                 </Typography>
             </Typography>);
             ++nestedCount;
