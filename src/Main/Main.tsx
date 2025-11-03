@@ -2,7 +2,7 @@ import { Avatar, Card, CardActions, CardContent, CardHeader, Divider, List, List
 import { Box } from "@mui/system";
 import React, { ReactNode } from "react";
 import CoverImage from '../Image/turbulence.png'
-import Myimage from '../Image/icon.png'
+import Myimage from '../Image/icon2.png'
 import GitHubIcon from '@mui/icons-material/GitHub';
 import { IconButton } from '@mui/material';
 import EmailIcon from '@mui/icons-material/Email';
