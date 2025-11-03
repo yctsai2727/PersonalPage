@@ -1,5 +1,4 @@
 import { Avatar, Card, CardActions, CardContent, CardHeader, Divider, List, ListItem, ListItemAvatar, ListItemText, Typography, Link } from "@mui/material";
-import { Box } from "@mui/system";
 import React, { ReactNode } from "react";
 import CoverImage from '../Image/turbulence.png'
 import Myimage from '../Image/20230125_122649.jpg'

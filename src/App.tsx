@@ -2,7 +2,6 @@ import './App.css';
 import { useLocation, Routes, Route, Navigate, Link as RouterLink, LinkProps as RouterLinkProps } from "react-router-dom";
 import { LinkProps } from '@mui/material/Link';
 import React from 'react';
-import { Box } from '@mui/system';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import Topbar from './Main/Topbar';
 import Home from './Main/Home';

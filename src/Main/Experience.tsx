@@ -1,6 +1,5 @@
 /* eslint import/no-webpack-loader-syntax: off */
 import { Avatar, Card, CardActions, CardContent, CardHeader, Divider, List, ListItem, ListItemAvatar, ListItemText, Typography, Link, Container } from "@mui/material";
-import { Box } from "@mui/system";
 import React, { ReactNode } from "react";
 import exp from '../experience.json'
 
